@@ -36,7 +36,7 @@ public class homework3 {
         //String myname = scanner.nextLine();
         String myname = scanner.nextLine();
         System.out.println("Добрый день,"+ myname + " !");
-        System.out.println("Ваше имя начинается на "+ myname.charAt(0) + " и заканчивается на " + myname.charAt(myname.length()-1));
+        System.out.println("Ваше имя начинается на \""+ myname.charAt(0) + "\" и заканчивается на \"" + myname.charAt(myname.length()-1) + "\"");
 
 
         //2. Создайте методы с математическими операциями +, -, *, /
