@@ -28,6 +28,7 @@ public class homework3 {
         System.out.println("Введите второе слово из четного числа букв");
         String secondWord = scanner.nextLine();
         String output = "";
+
         if ((firstWord.length() % 2) != 0) {
           output = "Первое слово " + firstWord + " состоит не из четного количества букв ";
         }
