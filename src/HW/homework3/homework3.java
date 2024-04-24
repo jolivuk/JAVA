@@ -27,17 +27,22 @@ public class homework3 {
         String firstWord = scanner.nextLine();
         System.out.println("Введите второе слово из четного числа букв");
         String secondWord = scanner.nextLine();
-        System.out.println(firstWord.substring(0,firstWord.length()/2) + secondWord.substring(secondWord.length()/2));
+        String output = "";
+        if ((firstWord.length() % 2) != 0) {
+          output = "Первое слово " + firstWord + " состоит не из четного количества букв ";
+        }
+
+        if ((secondWord.length() % 2) != 0) {
+            output ="Второе слово " + secondWord + " состоит не из четного количества букв";
+        }
+
+        if (((firstWord.length() % 2) == 0) && ((secondWord.length() % 2) == 0))
+        {
+          output = firstWord.substring(0,firstWord.length()/2) + secondWord.substring(secondWord.length()/2);
+        }
 
 
-        //Напишите программу, которая запрашивает имя пользователя и выводит на экран «Добрый день <…….. !>».
-        //«Ваше имя начинается с символа <.> и заканчивается на символ <.>».
-        System.out.println("Введите свое имя");
-        //String myname = scanner.nextLine();
-        String myname = scanner.nextLine();
-        System.out.println("Добрый день,"+ myname + " !");
-        System.out.println("Ваше имя начинается на \""+ myname.charAt(0) + "\" и заканчивается на \"" + myname.charAt(myname.length()-1) + "\"");
-
+        System.out.println(output);
 
         //2. Создайте методы с математическими операциями +, -, *, /
         //Каждый метод принимает два числа в параметрах и возвращает результат
@@ -58,13 +63,6 @@ public class homework3 {
         } else if (operation == '/') {
             System.out.println( firstNumber + " / " + secondNumber + " = " + calcDiv(firstNumber,secondNumber));
         }
-
-
-//        System.out.println("Введите свое имя");
-//        String myname = scanner.nextLine();
-//        System.out.println("Добрый день,"+ myname + " !");
-//        System.out.println("Ваше имя начинается на "+ myname.charAt(0) + " и заканчивается на" + myname.charAt(myname.length()-1));
-
 
     }
 }
