@@ -3,7 +3,21 @@ package homeworks.homework6;
 import java.util.Arrays;
 
 public class Task2a {
+/*
+Дан массив размера  N-1  , содержащий только различные целые числа в диапазоне от  1 до N . Найдите недостающий элемент.
+Пример 1:
+Вход:
+N = 5
+А[] = {1,2,3,5}
+Выход: 4
 
+
+Пример 2:
+Вход:
+N = 10
+А[] = {6,1,2,8,3,4,7,10,5}
+Выход: 9
+ */
     public static int findMissingNumber(int[] arr){
         boolean flagFound;
         int missingNumber = 0;
