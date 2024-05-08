@@ -9,6 +9,9 @@ public class ControlPanel {
         boolean game = true;
         int x = 0, y = 0;
         String command;
+        System.out.println("Input command to move personage - up, down, left, right");
+        System.out.println("To know position input - loc");
+        System.out.println("To exit - input exit");
 
         while (game){
             command = scanner.nextLine();
